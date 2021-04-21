@@ -11,9 +11,17 @@
     <modules>
         <module>microcloud-api</module>
         <module>midrocloud-product</module>
+        <module>midrocloud-product1</module>
+        <module>midrocloud-product2</module>
+
         <module>microcloud-consumer</module>
         <module>microcloud-security</module>
         <module>microcloud-eureka</module>
+        <module>microcloud-consumer-feign</module>
+        <module>microcloud-service</module>
+        <module>microcloud-product-hystrix</module>
+        <module>microcloud-consumer-hystrix-dashboard</module>
+        <module>microcloud-zuul-gateway</module>
     </modules>
 
 
@@ -87,6 +95,15 @@
                 <configuration>
                     <!--<source>${jdk.version}</source>&lt;!&ndash; 源代码使用的开发版本 &ndash;&gt;-->
                     <!--<target>${jdk.version}</target>&lt;!&ndash; 需要生成的目标class文件的编译版本 &ndash;&gt;-->
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
         </plugins>

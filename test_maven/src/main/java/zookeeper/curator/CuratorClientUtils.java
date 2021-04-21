@@ -17,5 +17,6 @@ public class CuratorClientUtils {
                         new ExponentialBackoffRetry(1000,3));
         curatorFramework.start();
         return curatorFramework;
+        //
     }
 }

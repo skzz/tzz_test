@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.client.RestTemplate;
 
+
 import java.nio.charset.Charset;
 import java.util.Base64;
 
@@ -30,5 +31,8 @@ public class RestConfig {
         headers.set("Authorization", authHeader);
         return headers;
     }
+
+
+
 
 }
