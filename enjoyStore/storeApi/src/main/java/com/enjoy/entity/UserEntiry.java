@@ -42,4 +42,14 @@ public class UserEntiry  implements Serializable {
     public void setBalance(long balance) {
         this.balance = balance;
     }
+
+    @Override
+    public String toString() {
+        return "UserEntiry{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

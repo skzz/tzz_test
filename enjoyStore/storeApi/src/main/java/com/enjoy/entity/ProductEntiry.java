@@ -44,4 +44,14 @@ public class ProductEntiry implements Serializable{
     public void setStatus(int status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "ProductEntiry{" +
+                "id='" + id + '\'' +
+                ", price=" + price +
+                ", name='" + name + '\'' +
+                ", status=" + status +
+                '}';
+    }
 }

@@ -57,4 +57,16 @@ public class OrderEntiry  implements Serializable {
     public void setStatus(int status) {
         this.status = status;
     }
+
+
+    @Override
+    public String toString() {
+        return "OrderEntiry{" +
+                "id='" + id + '\'' +
+                ", money=" + money +
+                ", userId='" + userId + '\'' +
+                ", status=" + status +
+                ", productlist=" + productlist +
+                '}';
+    }
 }

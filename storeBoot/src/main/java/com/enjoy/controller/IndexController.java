@@ -23,16 +23,15 @@ public class IndexController {
     @Reference(check = true)
     private OrderService orderService;
 
-    @Autowired
     private ProductService productService;
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public Map index(HttpServletRequest request, HttpServletResponse response) {
 
         String id = request.getParameter("id");
-        String userView = userService.getDetail(id);
-        String orderView = orderService.getDetail(id);
-        String productView = productService.getDetail(id);
+        String userView = userService.getDetail(id).toString();
+        String orderView = orderService.getDetail(id).toString();
+        String productView = productService.getDetail(id).toString();
 
         Map map = new HashMap<>();
         map.put("userView", userView);
