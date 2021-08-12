@@ -1,4 +1,4 @@
-package mq.rabbitmq;
+package mq.rabbitmq.p1;
 
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
